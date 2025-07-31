@@ -34,13 +34,9 @@
   background-color: #0056b3;
 }
 
-
-
-
 .product-image:hover {
   transform: scale(1.03); /* smooth zoom effect on hover */
 }
-
 
 .product-name {
   font-size: 1.1rem;
@@ -51,7 +47,6 @@
   color: #666;
   margin: 0.5rem 0;
 }
-
 
 .product-price {
   font-size: 18px;
@@ -68,9 +63,6 @@
   border-radius: 12px;
   margin-bottom: 10px;
 }
-
-
-
 
 .product-card:hover {
   transform: translateY(-6px);
@@ -105,14 +97,11 @@
   border-color: #007bff;
 }
 
-
-
-
 /* 🧱 GRID LAYOUT */
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);  /* 3 products per row */
-   gap: 50px; /* ✅ Ye lagayega card ke beech gap */
+  grid-template-columns: repeat(3, 1fr); /* 3 products per row */
+  gap: 50px; /* ✅ Ye lagayega card ke beech gap */
   padding: 50px;
 }
 
@@ -127,20 +116,20 @@
   align-items: center;
   text-align: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  
+
   margin: 10px 0;
-  width: 100%;        /* ✅ Grid cell के हिसाब से पूरा फैलता है */
-  height: auto;       /* ✅ Card height image और content के हिसाब से */
+  width: 100%; /* ✅ Grid cell के हिसाब से पूरा फैलता है */
+  height: auto; /* ✅ Card height image और content के हिसाब से */
   overflow: hidden;
   position: relative;
 }
 
 /* 🖼️ PRODUCT IMAGE */
 .product-image {
-  width: 100%;             /* ✅ Image card की width के बराबर */
-  height: auto;            /* ✅ Height भी अपने आप होगी */
-  aspect-ratio: 1 / 1;     /* ✅ Maintain square ratio (optional but clean) */
-  object-fit: contain;     /* ✅ Image पूरी दिखे, crop न हो */
+  width: 100%; /* ✅ Image card की width के बराबर */
+  height: auto; /* ✅ Height भी अपने आप होगी */
+  aspect-ratio: 1 / 1; /* ✅ Maintain square ratio (optional but clean) */
+  object-fit: contain; /* ✅ Image पूरी दिखे, crop न हो */
   background-color: #f8f8f8;
   padding: 10px;
   border-radius: 10px;
@@ -153,6 +142,10 @@
 @media (max-width: 768px) {
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .search-input {
+    width: 285px;
   }
 }
 
