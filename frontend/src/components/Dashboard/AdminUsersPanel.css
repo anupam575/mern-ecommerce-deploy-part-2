@@ -2,7 +2,7 @@
 
 .admin-panel {
   padding: 2rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f4f6f8;
   min-height: 100vh;
 }
@@ -105,3 +105,10 @@
 .back-btn:hover {
   background-color: #ea0808a2;
 }
+
+@media (max-width: 991px) {
+  .tabel_container {
+    overflow-x: auto;
+  }
+}
+
