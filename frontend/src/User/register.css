@@ -1,4 +1,3 @@
-
 /* register.css */
 
 /* ✅ Desktop styles remain unchanged */
@@ -81,10 +80,12 @@
 /* For tablets and small laptops */
 @media (max-width: 768px) {
   .register-container {
-    padding: 20px;
+    padding: 0px;
     height: auto;
   }
-
+.register-form button {
+  margin-top: -10px;
+}
   .register-form {
     padding: 25px 20px;
     max-width: 100%;
@@ -117,6 +118,7 @@
   .register-container {
     padding: 15px;
     height: auto;
+    
   }
 
   .register-form {
@@ -144,3 +146,4 @@
     height: 40px;
   }
 }
+
