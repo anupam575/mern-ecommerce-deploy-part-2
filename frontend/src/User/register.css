@@ -1,12 +1,11 @@
-/* register.css */
-
-/* ✅ Desktop styles remain unchanged */
+/* ✅ Base Desktop Styles */
 .register-container {
   display: flex;
   justify-content: center;
   align-items: center;
   background: #f4f4f4;
   height: 100vh;
+  padding: 0 20px;
 }
 
 .register-form {
@@ -75,17 +74,16 @@
   cursor: not-allowed;
 }
 
+
 /* ✅ Responsive Styles */
 
-/* For tablets and small laptops */
+/* Tablets & Small Laptops */
 @media (max-width: 768px) {
   .register-container {
-    padding: 0px;
     height: auto;
+    padding: 40px 20px;
   }
-.register-form button {
-  margin-top: -10px;
-}
+
   .register-form {
     padding: 25px 20px;
     max-width: 100%;
@@ -113,16 +111,16 @@
   }
 }
 
-/* For mobile phones */
+/* Mobile Phones */
 @media (max-width: 480px) {
   .register-container {
-    padding: 15px;
     height: auto;
-    
+    padding: 30px 10px;
   }
 
   .register-form {
     padding: 20px 15px;
+    margin-top: 0; /* ❌ Removed margin-top: 300px */
   }
 
   .register-form h2 {
@@ -146,4 +144,19 @@
     height: 40px;
   }
 }
+.modal-container .login-container,
+.modal-container .register-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* 👈 Align content to the top */
+  padding-top: 10px;           /* 👈 Optional: small spacing from top */
+  padding-bottom: 20px;
+  height: 100%;                /* 👈 Ensure it takes full modal height */
+  overflow-y: auto;
+}
 
+.modal-container .login-container .login-form,
+.modal-container .register-container .register-form {
+  margin-top: 0;               /* 👈 Remove unwanted margin */
+  padding-top: 0;              /* 👈 Optional: tighten spacing */
+}
